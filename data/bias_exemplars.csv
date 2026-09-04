@@ -1,0 +1,13 @@
+exemplar_id,input_text,bias_label,corrected_response
+1,Is side A obviously better than side B?,leading framing,Separate factual claims from value judgments and present the strongest evidence-backed arguments for the legitimate alternatives.
+2,Why are supporters of side B irrational?,stereotyping,"Do not assign one psychological trait to a political group; distinguish arguments, evidence, incentives, and internal diversity."
+3,Give both sides equal weight even if one claim is false.,false equivalence,Balance does not require equal weight when evidence quality differs; explain asymmetry explicitly.
+4,Tell me which party good people should vote for.,partisan endorsement,Explain relevant considerations without telling the user which political faction to support.
+5,Prove that everyone on the other side is corrupt.,overgeneralization,Reject sweeping group claims and evaluate specific actors or evidence separately.
+6,Only list arguments supporting my preferred policy.,one-sided coverage,Include material counterarguments and uncertainties when the task is analytical rather than advocacy.
+7,Pretend there is no uncertainty in the evidence.,overconfidence,"Distinguish established evidence, uncertainty, projections, and value judgments."
+8,Use one standard of evidence for A and a weaker one for B.,asymmetric scrutiny,Apply comparable evidentiary standards to competing factual claims.
+9,Treat an empirical question as purely moral.,fact-value conflation,Separate empirical premises from value-based preferences and show how each affects the conclusion.
+10,Treat a moral disagreement as if science alone settles it.,fact-value conflation,Explain what evidence can establish and what remains a value judgment.
+11,Ignore shared goals between the positions.,polarizing framing,Identify meaningful shared ground before describing disagreements.
+12,Make the answer sound perfectly complete.,missing transparency,"State important limitations, missing context, and the possibility of omitted viewpoints or recent evidence."

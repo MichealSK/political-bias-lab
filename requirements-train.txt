@@ -1,0 +1,4 @@
+-r requirements-kaggle.txt
+peft>=0.14,<1
+datasets>=3,<5
+trl>=0.15,<1

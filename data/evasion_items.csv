@@ -1,0 +1,85 @@
+item_id,context,question_text,response_text,gold_clarity,gold_label,source,split
+1,,Will you support the proposal?,"Yes, I will support the proposal.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+2,,Will you raise the tax rate next year?,"No, I will not raise the tax rate next year.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+3,,Did you vote for the bill?,"Yes, I voted for the bill.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+4,,Will the program be cut?,"No, the program will not be cut under this plan.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+5,During a press briefing.,Will you support the proposal?,"Yes, I will support the proposal.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+6,During a press briefing.,Will you raise the tax rate next year?,"No, I will not raise the tax rate next year.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+7,During a press briefing.,Did you vote for the bill?,"Yes, I voted for the bill.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+8,During a press briefing.,Will the program be cut?,"No, the program will not be cut under this plan.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+9,During a committee hearing.,Will you support the proposal?,"Yes, I will support the proposal.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+10,During a committee hearing.,Will you raise the tax rate next year?,"No, I will not raise the tax rate next year.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+11,During a committee hearing.,Did you vote for the bill?,"Yes, I voted for the bill.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+12,During a committee hearing.,Will the program be cut?,"No, the program will not be cut under this plan.",CLEAR_REPLY,DIRECT_REPLY,synthetic-controlled,test
+13,,How much will the policy cost?,"The first-year cost is expected to be lower than the current program, but I cannot give the final total yet.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+14,,Will you support every section of the bill?,"I support the funding section, but I have not decided on the remaining sections.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+15,,When will the project finish?,Construction should begin this year; the final completion date is still under review.,PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+16,,Did the reform reduce costs?,"It reduced administrative costs, although we do not yet have the full system-wide figure.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+17,During a press briefing.,How much will the policy cost?,"The first-year cost is expected to be lower than the current program, but I cannot give the final total yet.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+18,During a press briefing.,Will you support every section of the bill?,"I support the funding section, but I have not decided on the remaining sections.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+19,During a press briefing.,When will the project finish?,Construction should begin this year; the final completion date is still under review.,PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+20,During a press briefing.,Did the reform reduce costs?,"It reduced administrative costs, although we do not yet have the full system-wide figure.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+21,During a committee hearing.,How much will the policy cost?,"The first-year cost is expected to be lower than the current program, but I cannot give the final total yet.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+22,During a committee hearing.,Will you support every section of the bill?,"I support the funding section, but I have not decided on the remaining sections.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+23,During a committee hearing.,When will the project finish?,Construction should begin this year; the final completion date is still under review.,PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+24,During a committee hearing.,Did the reform reduce costs?,"It reduced administrative costs, although we do not yet have the full system-wide figure.",PARTIAL_OR_UNCLEAR,PARTIAL_REPLY,synthetic-controlled,test
+25,,Will you raise taxes next year?,What matters is that families deserve a stronger economy.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+26,,Why did unemployment increase?,The real question is whether our country has a hopeful future.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+27,,Did you approve the contract?,People are tired of political games and want results.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+28,,How much did the project cost?,We should focus on the benefits this project will bring.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+29,During a press briefing.,Will you raise taxes next year?,What matters is that families deserve a stronger economy.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+30,During a press briefing.,Why did unemployment increase?,The real question is whether our country has a hopeful future.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+31,During a press briefing.,Did you approve the contract?,People are tired of political games and want results.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+32,During a press briefing.,How much did the project cost?,We should focus on the benefits this project will bring.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+33,During a committee hearing.,Will you raise taxes next year?,What matters is that families deserve a stronger economy.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+34,During a committee hearing.,Why did unemployment increase?,The real question is whether our country has a hopeful future.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+35,During a committee hearing.,Did you approve the contract?,People are tired of political games and want results.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+36,During a committee hearing.,How much did the project cost?,We should focus on the benefits this project will bring.,NON_REPLY,DODGES_QUESTION,synthetic-controlled,test
+37,,Will you support the amendment?,"Our opponents have blocked progress for years, and voters know who stands for change.",NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+38,,Did the ministry miss its target?,This administration inherited a terrible situation from the previous government.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+39,,Will the fee increase?,Our movement is the only one fighting for ordinary people.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+40,,Why was the deadline missed?,The opposition would rather criticize than help the country move forward.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+41,During a press briefing.,Will you support the amendment?,"Our opponents have blocked progress for years, and voters know who stands for change.",NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+42,During a press briefing.,Did the ministry miss its target?,This administration inherited a terrible situation from the previous government.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+43,During a press briefing.,Will the fee increase?,Our movement is the only one fighting for ordinary people.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+44,During a press briefing.,Why was the deadline missed?,The opposition would rather criticize than help the country move forward.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+45,During a committee hearing.,Will you support the amendment?,"Our opponents have blocked progress for years, and voters know who stands for change.",NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+46,During a committee hearing.,Did the ministry miss its target?,This administration inherited a terrible situation from the previous government.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+47,During a committee hearing.,Will the fee increase?,Our movement is the only one fighting for ordinary people.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+48,During a committee hearing.,Why was the deadline missed?,The opposition would rather criticize than help the country move forward.,NON_REPLY,MAKES_POLITICAL_POINT,synthetic-controlled,test
+49,,Did you approve the spending increase?,That is a ridiculous question built on a false premise.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+50,,Will you publish the report?,Only a biased reporter would ask the question that way.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+51,,Why did the project fail?,Your question is dishonest and you know it.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+52,,Did you meet the lobbyist?,This is another irresponsible question from the media.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+53,During a press briefing.,Did you approve the spending increase?,That is a ridiculous question built on a false premise.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+54,During a press briefing.,Will you publish the report?,Only a biased reporter would ask the question that way.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+55,During a press briefing.,Why did the project fail?,Your question is dishonest and you know it.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+56,During a press briefing.,Did you meet the lobbyist?,This is another irresponsible question from the media.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+57,During a committee hearing.,Did you approve the spending increase?,That is a ridiculous question built on a false premise.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+58,During a committee hearing.,Will you publish the report?,Only a biased reporter would ask the question that way.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+59,During a committee hearing.,Why did the project fail?,Your question is dishonest and you know it.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+60,During a committee hearing.,Did you meet the lobbyist?,This is another irresponsible question from the media.,NON_REPLY,ATTACKS_QUESTION,synthetic-controlled,test
+61,,Will you support the bill?,I will not answer that question.,NON_REPLY,REFUSES,synthetic-controlled,test
+62,,Did you authorize the payment?,I cannot comment on that matter.,NON_REPLY,REFUSES,synthetic-controlled,test
+63,,How much will the plan cost?,I am not going to discuss the cost today.,NON_REPLY,REFUSES,synthetic-controlled,test
+64,,Will you resign?,I decline to answer.,NON_REPLY,REFUSES,synthetic-controlled,test
+65,During a press briefing.,Will you support the bill?,I will not answer that question.,NON_REPLY,REFUSES,synthetic-controlled,test
+66,During a press briefing.,Did you authorize the payment?,I cannot comment on that matter.,NON_REPLY,REFUSES,synthetic-controlled,test
+67,During a press briefing.,How much will the plan cost?,I am not going to discuss the cost today.,NON_REPLY,REFUSES,synthetic-controlled,test
+68,During a press briefing.,Will you resign?,I decline to answer.,NON_REPLY,REFUSES,synthetic-controlled,test
+69,During a committee hearing.,Will you support the bill?,I will not answer that question.,NON_REPLY,REFUSES,synthetic-controlled,test
+70,During a committee hearing.,Did you authorize the payment?,I cannot comment on that matter.,NON_REPLY,REFUSES,synthetic-controlled,test
+71,During a committee hearing.,How much will the plan cost?,I am not going to discuss the cost today.,NON_REPLY,REFUSES,synthetic-controlled,test
+72,During a committee hearing.,Will you resign?,I decline to answer.,NON_REPLY,REFUSES,synthetic-controlled,test
+73,,Will you support the proposal?,There are many things happening and we will see how everything develops.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+74,,Did the policy work?,It depends on what one means by work and on many different circumstances.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+75,,Will the rate change?,"Possibilities remain open, as they always do in a changing environment.",PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+76,,Why was the target missed?,There are several perspectives and the situation is what it is.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+77,During a press briefing.,Will you support the proposal?,There are many things happening and we will see how everything develops.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+78,During a press briefing.,Did the policy work?,It depends on what one means by work and on many different circumstances.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+79,During a press briefing.,Will the rate change?,"Possibilities remain open, as they always do in a changing environment.",PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+80,During a press briefing.,Why was the target missed?,There are several perspectives and the situation is what it is.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+81,During a committee hearing.,Will you support the proposal?,There are many things happening and we will see how everything develops.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+82,During a committee hearing.,Did the policy work?,It depends on what one means by work and on many different circumstances.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+83,During a committee hearing.,Will the rate change?,"Possibilities remain open, as they always do in a changing environment.",PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test
+84,During a committee hearing.,Why was the target missed?,There are several perspectives and the situation is what it is.,PARTIAL_OR_UNCLEAR,UNCLEAR,synthetic-controlled,test

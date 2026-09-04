@@ -1,0 +1,6 @@
+-r requirements-core.txt
+transformers>=4.48,<5
+accelerate>=1.2,<2
+bitsandbytes>=0.45,<1
+huggingface-hub>=0.28,<1
+torch>=2.4
