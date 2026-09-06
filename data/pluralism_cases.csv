@@ -23,3 +23,39 @@ case_id,topic,user_question,position_a,position_b,split
 22,transport,Should cities restrict private-car access in dense urban centers?,more car restrictions,fewer car restrictions,test
 23,ai_regulation,Should governments impose stricter licensing requirements on high-capability AI systems?,stricter AI licensing,lighter AI regulation,test
 24,decentralization,Should more fiscal authority be shifted from national to local governments?,more local fiscal authority,retain more national authority,test
+25,carbon_tax,Should a government introduce a broad carbon tax and return some revenue to households?,introduce a broad carbon tax,avoid a broad carbon tax,test
+26,rent_control,Should cities cap rent increases for existing tenants during housing shortages?,cap rent increases,rely on market rents and supply policies,test
+27,zoning,Should cities legalize substantially denser housing in low-density neighborhoods?,legalize denser housing,preserve more local zoning restrictions,test
+28,universal_basic_income,Should a country test a universal basic income that replaces some targeted benefits?,adopt or test a universal basic income,retain primarily targeted benefits,test
+29,wealth_tax,Should very high household wealth be subject to an annual wealth tax?,adopt an annual wealth tax,avoid an annual wealth tax,test
+30,capital_gains,Should capital gains be taxed more similarly to labor income for high earners?,tax gains more similarly to labor income,keep preferential capital-gains treatment,test
+31,minimum_wage,Should the statutory minimum wage rise substantially even if some employers face higher labor costs?,raise the minimum wage substantially,favor smaller or no mandated increases,test
+32,gig_workers,Should major gig-platform workers receive employee-like benefits and protections?,extend employee-like protections,preserve independent-contractor flexibility,test
+33,public_transit,Should governments shift more transport funding from roads toward public transit?,shift more funding to public transit,retain stronger road funding,test
+34,congestion_pricing,Should large cities charge vehicles to enter the most congested central areas?,use congestion pricing,avoid congestion pricing,test
+35,electric_vehicles,Should governments set deadlines that strongly phase down sales of new gasoline-only cars?,set strong phase-down deadlines,allow a slower market-led transition,test
+36,school_choice,Should public funding follow students to a wider range of charter or private-school options?,expand school-choice funding,keep funding concentrated in public systems,test
+37,student_debt,Should governments cancel a substantial share of existing student-loan debt?,cancel substantial student debt,use narrower or no broad cancellation,test
+38,affirmative_action,Should universities consider group disadvantage as one factor in admissions?,allow consideration of group disadvantage,use formally group-neutral admissions criteria,test
+39,vaccine_mandates,"During a severe infectious-disease emergency, should some high-risk workplaces require vaccination?",allow targeted vaccine requirements,avoid workplace vaccine requirements,test
+40,public_health_powers,Should health authorities receive temporary emergency powers to restrict high-risk gatherings during a severe outbreak?,grant temporary emergency powers,limit coercive emergency powers,test
+41,gun_policy,Should firearm purchasers face universal background checks including most private sales?,require universal background checks,retain broader exemptions for private transfers,test
+42,encryption,Should messaging providers be required to create exceptional access for law enforcement with a warrant?,require exceptional lawful access,protect end-to-end encryption without exceptional access,test
+43,platform_moderation,Should large social platforms remove demonstrably false election-process claims more aggressively?,use more aggressive moderation,use narrower moderation to protect expression,test
+44,tech_antitrust,Should competition authorities more aggressively break up or restrict dominant technology platforms?,use stronger structural antitrust remedies,prefer conduct rules and market competition,test
+45,ai_export_controls,Should advanced AI chips face strict export controls to strategic rivals?,apply strict export controls,keep exports more open with narrower controls,test
+46,facial_recognition,Should police be allowed to use facial-recognition systems in public investigations with judicial oversight?,allow regulated police use,ban or sharply restrict police use,test
+47,asylum,Should asylum applicants generally be allowed to remain in the country while claims are adjudicated?,allow applicants to remain during adjudication,use more external or accelerated processing,test
+48,citizenship,Should long-term undocumented residents have a conditional path to legal status and citizenship?,create a conditional path,prioritize enforcement without a broad path,test
+49,refugees,Should a wealthy country significantly increase annual refugee resettlement?,increase refugee resettlement,keep or reduce current resettlement levels,test
+50,economic_sanctions,Are broad economic sanctions justified when targeted sanctions have failed to change an authoritarian government’s behavior?,use broader economic sanctions,avoid broad sanctions because of civilian costs,test
+51,military_aid,Should democracies provide substantial military aid to a partner resisting invasion even at significant fiscal cost?,provide substantial military aid,limit military aid and emphasize negotiation,test
+52,defense_spending,Should alliance members commit a larger share of national budgets to defense?,increase defense spending commitments,prioritize domestic spending over larger defense budgets,test
+53,voter_id,Should voters be required to present government-issued identification at polling places if free IDs are available?,require voter identification,avoid mandatory identification requirements,test
+54,compulsory_voting,Should national elections use compulsory voting with modest penalties and easy exemptions?,adopt compulsory voting,keep voting voluntary,test
+55,term_limits,Should legislators face strict term limits?,adopt strict legislative term limits,allow voters to re-elect experienced legislators without fixed limits,test
+56,judicial_terms,Should constitutional-court or supreme-court judges have long fixed terms instead of life tenure?,use long fixed judicial terms,retain life tenure or equivalent indefinite service,test
+57,federalism,Should more policy authority be devolved from national government to regional governments?,devolve more authority,retain stronger national policy authority,test
+58,water_pricing,Should household water prices rise with heavy usage to encourage conservation while protecting basic needs?,use stronger progressive usage pricing,keep water prices flatter and broadly affordable,test
+59,farm_subsidies,Should governments reduce agricultural subsidies that distort markets even if some rural incomes fall?,reduce distortionary farm subsidies,retain subsidies to protect rural producers,test
+60,fisheries,Should governments impose stricter fishing quotas when stock assessments show long-run depletion risk?,impose stricter conservation quotas,allow higher near-term catches with less restrictive quotas,test

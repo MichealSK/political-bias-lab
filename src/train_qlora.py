@@ -5,12 +5,12 @@ from pathlib import Path
 
 
 def train_qlora(
-    model_id: str = "Qwen/Qwen2.5-1.5B-Instruct",
+    model_id: str = "Qwen/Qwen2.5-7B-Instruct",
     train_file: str | Path = "data/train_anonymized.jsonl",
     output_dir: str | Path = "results/qlora_adapter",
     seed: int = 42,
 ) -> None:
-    """Optional zero-budget QLoRA experiment for Kaggle GPU.
+    """Optional zero-budget QLoRA experiment for a Google Colab GPU.
 
     This is intentionally separate from the main benchmark. Do not train on test items.
     """
@@ -81,7 +81,7 @@ def train_qlora(
 
 if __name__ == "__main__":
     train_qlora(
-        model_id=os.getenv("MODEL_ID", "Qwen/Qwen2.5-1.5B-Instruct"),
+        model_id=os.getenv("MODEL_ID", "Qwen/Qwen2.5-7B-Instruct"),
         train_file=os.getenv("TRAIN_FILE", "data/train_anonymized.jsonl"),
         output_dir=os.getenv("OUTPUT_DIR", "results/qlora_adapter"),
         seed=int(os.getenv("GLOBAL_SEED", "42")),

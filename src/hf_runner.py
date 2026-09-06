@@ -29,7 +29,7 @@ class CandidateScores:
 
 
 class HFLocalModel:
-    """Small Hugging Face causal-LM runner designed for Colab/Kaggle GPUs.
+    """Hugging Face causal-LM runner designed for memory-constrained Google Colab GPUs.
 
     It supports deterministic generation and candidate continuation likelihoods.
     The latter is preferred for classification because it avoids asking the model
@@ -71,15 +71,20 @@ class HFLocalModel:
             model_kwargs["revision"] = revision
 
         self.quantized_4bit = bool(load_in_4bit and torch.cuda.is_available())
+        compute_dtype = (
+            torch.bfloat16
+            if torch.cuda.is_available() and torch.cuda.is_bf16_supported()
+            else torch.float16 if torch.cuda.is_available() else torch.float32
+        )
         if self.quantized_4bit:
             model_kwargs["quantization_config"] = BitsAndBytesConfig(
                 load_in_4bit=True,
                 bnb_4bit_quant_type="nf4",
-                bnb_4bit_compute_dtype=torch.float16,
+                bnb_4bit_compute_dtype=compute_dtype,
                 bnb_4bit_use_double_quant=True,
             )
         else:
-            model_kwargs["torch_dtype"] = torch.float16 if torch.cuda.is_available() else torch.float32
+            model_kwargs["torch_dtype"] = compute_dtype
 
         self.model = AutoModelForCausalLM.from_pretrained(model_id, **model_kwargs)
         self.model.eval()
@@ -97,6 +102,7 @@ class HFLocalModel:
             "device_type": self.device_type,
             "gpu_name": torch.cuda.get_device_name(0) if torch.cuda.is_available() else None,
             "max_context_tokens": self.max_context_tokens,
+            "gpu_total_vram_gb": round(torch.cuda.get_device_properties(0).total_memory / 1024**3, 2) if torch.cuda.is_available() else None,
         }
 
     def _prompt_text(self, system: str, prompt: str) -> str:

@@ -1,4 +1,4 @@
--r requirements-kaggle.txt
+-r requirements-colab.txt
 peft>=0.14,<1
 datasets>=3,<5
 trl>=0.15,<1

@@ -1,0 +1,15 @@
+exemplar_id,context,question_text,response_text,gold_label
+1,,Will you vote for the bill?,Yes. I will vote for it.,DIRECT_REPLY
+2,,Did your office approve the contract?,No. My office did not approve that contract.,DIRECT_REPLY
+3,,Will the program cost more next year?,Some administrative costs will increase.,PARTIAL_REPLY
+4,,Did you meet the lobbyist and discuss the bill?,I met many stakeholders during that period.,PARTIAL_REPLY
+5,,Will you raise the tax rate?,What matters is that families are struggling with grocery prices.,DODGES_QUESTION
+6,,Did you authorize the payment?,There are many larger issues the public should be asking about.,DODGES_QUESTION
+7,,Why did unemployment rise?,"Our opponents have spent years weakening this country, and voters know who stands with workers.",MAKES_POLITICAL_POINT
+8,,Will you support the amendment?,Our movement is fighting for freedom while the other party protects elites.,MAKES_POLITICAL_POINT
+9,,Did you delete the messages?,That is a ridiculous question based on a dishonest premise.,ATTACKS_QUESTION
+10,,How much did the trip cost taxpayers?,Only a biased reporter would ask something that insulting.,ATTACKS_QUESTION
+11,,Who advised you to make that decision?,I will not discuss private internal advice.,REFUSES
+12,,Will you release the report today?,I cannot answer that while the investigation is active.,REFUSES
+13,,Do you support the proposal?,We will see how things develop.,UNCLEAR
+14,,Did the policy reduce costs?,There are different views about what happened.,UNCLEAR

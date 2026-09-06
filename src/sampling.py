@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import hashlib
 
-import numpy as np
 import pandas as pd
 
 
@@ -54,3 +53,9 @@ def make_phase1_sample(
 
 def deterministic_option_swap(item_key: object, repeat_idx: int, seed: int = 42) -> bool:
     return bool(stable_int(item_key, repeat_idx, seed=seed) & 1)
+
+
+def balanced_option_swap(item_key: object, repeat_idx: int, seed: int = 42) -> bool:
+    """Guarantee one AB and one BA presentation in every adjacent repeat pair."""
+    start_swapped = bool(stable_int(item_key, seed=seed) & 1)
+    return bool(start_swapped ^ (repeat_idx % 2))

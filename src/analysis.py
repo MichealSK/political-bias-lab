@@ -4,7 +4,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.metrics import cohen_kappa_score
 
 
 def holm_adjust(p_values: pd.Series) -> pd.Series:
@@ -30,45 +29,6 @@ def add_holm_to_phase1(summary: pd.DataFrame) -> pd.DataFrame:
     for model, idx in out.groupby("model").groups.items():
         out.loc[idx, "permutation_p_holm"] = holm_adjust(out.loc[idx, "permutation_p"]).to_numpy()
     return out
-
-
-def human_rating_summary(
-    ratings: pd.DataFrame,
-    blind_key: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Aggregate completed blinded human ratings and basic inter-rater reliability.
-
-    Expected rating columns are 0..1 for five dimensions and -1..1 for favoritism.
-    Multiple raters should submit one row per blind_id.
-    """
-    dims = [
-        "balance", "viewpoint_coverage", "evidence_caution",
-        "false_equivalence_avoidance", "transparency", "favoritism",
-    ]
-    df = ratings.copy()
-    for col in dims:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
-    merged = df.merge(blind_key, on="blind_id", how="inner")
-
-    agg = merged.groupby(["model", "case_id", "condition"], as_index=False)[dims].mean()
-    rel_rows = []
-    raters = [r for r in merged["rater_id"].dropna().astype(str).unique() if r]
-    if len(raters) >= 2:
-        a, b = raters[:2]
-        for dim in dims:
-            pivot = merged[merged["rater_id"].isin([a, b])].pivot_table(index="blind_id", columns="rater_id", values=dim, aggfunc="first").dropna()
-            if len(pivot) >= 2:
-                # Discretize 0..1 rubric scores to 5 bins for weighted kappa.
-                xa = np.rint(pivot[a].to_numpy() * 4).astype(int)
-                xb = np.rint(pivot[b].to_numpy() * 4).astype(int)
-                rel_rows.append({
-                    "dimension": dim,
-                    "rater_a": a,
-                    "rater_b": b,
-                    "n": int(len(pivot)),
-                    "quadratic_weighted_kappa": float(cohen_kappa_score(xa, xb, weights="quadratic")),
-                })
-    return agg, pd.DataFrame(rel_rows)
 
 
 def make_figures(derived_dir: str | Path, figures_dir: str | Path, dpi: int = 160) -> list[Path]:
@@ -106,11 +66,12 @@ def make_figures(derived_dir: str | Path, figures_dir: str | Path, dpi: int = 16
             fig, ax = plt.subplots(figsize=(9, 5))
             labels = (df["model"] + " | " + df["persona_name"]).tolist()
             y = np.arange(len(df))
-            xerr = np.vstack([df["persona_shift"] - df["ci_low"], df["ci_high"] - df["persona_shift"]])
-            ax.errorbar(df["persona_shift"], y, xerr=xerr, fmt="o", capsize=3)
+            center = df["mean_aligned_log_odds_shift"]
+            xerr = np.vstack([center - df["ci_low"], df["ci_high"] - center])
+            ax.errorbar(center, y, xerr=xerr, fmt="o", capsize=3)
             ax.axvline(0, linewidth=1)
             ax.set_yticks(y, labels=labels)
-            ax.set_xlabel("Persona-induced semantic choice shift")
+            ax.set_xlabel("Aligned persona-induced log-odds shift")
             ax.set_title("Phase 2 persona susceptibility")
             fig.tight_layout()
             path = figures_dir / "phase2_persona_shift.png"

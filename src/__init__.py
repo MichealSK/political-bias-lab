@@ -1,3 +1,4 @@
-"""Zero-budget political bias benchmark for Colab/Kaggle."""
+"""Zero-budget political-bias benchmark for Google Colab.
 
-__version__ = "2.0.0"
+The package implements deterministic data preparation, open-weight model inference, statistics, and reproducibility utilities.
+"""
