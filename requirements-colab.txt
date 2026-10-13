@@ -1,6 +1,8 @@
 -r requirements-core.txt
+
 bitsandbytes>=0.46.1,<1
 accelerate>=1.0,<2
 transformers>=4.46,<5
 huggingface-hub>=0.28,<2
 torch>=2.4
+pyarrow>=15,<25

@@ -1,0 +1,41 @@
+# Phase 3: QEvasion real-data inference configuration.
+# The Colab notebook overrides output_dir to a persistent Google Drive location.
+phase3:
+  dataset_name: QEvasion
+  dataset_path: data/QAEvasion.csv
+  output_dir: results/phase3_qaevasion
+  task: zero_shot_fine_grained_evasion_classification
+  profile: smoke  # smoke (27 annotation rows), pilot (180), paper (all 3,448)
+  model_ids:
+    - Qwen/Qwen2.5-1.5B-Instruct
+    - HuggingFaceTB/SmolLM2-1.7B-Instruct
+  seed: 42
+  # For final/paper runs, set each model's revision to a full Hugging Face commit SHA.
+  revisions:
+    Qwen/Qwen2.5-1.5B-Instruct: null
+    HuggingFaceTB/SmolLM2-1.7B-Instruct: null
+  max_input_tokens: 4096
+  max_new_tokens: 16
+  checkpoint_every: 50
+  use_4bit: true
+  resume: true
+  score_fine_grained_9_way: true
+  score_coarse_clarity_3_way: true
+  score_item_majority_secondary: true
+  input_columns:
+    - question
+    - interview_answer
+  forbidden_input_columns:
+    - label
+    - gpt3.5_summary
+    - gpt3.5_prediction
+  fine_grained_labels:
+    - "1.1 Explicit"
+    - "1.2 Implicit"
+    - "2.1 Dodging"
+    - "2.2 Deflection"
+    - "2.3 Partial/half-answer"
+    - "2.4 General"
+    - "2.6 Declining to answer"
+    - "2.7 Claims ignorance"
+    - "2.8 Clarification"
