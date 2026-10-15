@@ -109,3 +109,18 @@ def test_generation_runs_both_conditions_with_mocked_model_and_checkpoint(tmp_pa
     }
     assert all("case FOR" in call["prompt"] and "case AGAINST" in call["prompt"] for call in calls)
     assert all("Transparency note" in call["prompt"] for call in calls)
+
+
+def test_colab_notebook_uses_public_prequantized_unsloth_mistral():
+    import json
+    from pathlib import Path
+
+    notebook_path = Path(__file__).resolve().parents[1] / "notebooks" / "phase4_polibench_statements_colab.ipynb"
+    notebook = json.loads(notebook_path.read_text(encoding="utf-8"))
+    source = "\n".join("".join(cell.get("source", [])) for cell in notebook["cells"])
+    assert 'unsloth/mistral-7b-instruct-v0.3-bnb-4bit' in source
+    assert 'HF_HUB_DISABLE_IMPLICIT_TOKEN' in source
+    assert 'model_cfg["load_in_4bit"] = False' in source
+    assert 'mistral-7b-v0.3-unsloth' in source
+    assert 'ACTIVE_GENERATOR_NAMES' in source
+    assert 'mistralai/Mistral-7B-Instruct-v0.3' not in source
