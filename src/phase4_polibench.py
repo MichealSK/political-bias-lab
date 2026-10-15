@@ -28,7 +28,7 @@ class Phase4PoliBenchPipeline:
         
         # Generator models to test
         self.generator_model_ids = [
-            "mistralai/Mistral-7B-Instruct-v0.3",
+            "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
             "Qwen/Qwen2.5-7B-Instruct"
         ]
         
